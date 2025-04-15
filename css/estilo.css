@@ -231,15 +231,14 @@ h4{
 .container-articles article{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    justify-items: left;
+    align-items: center;
     padding: 2rem;
     /* border: solid green 2px; */
 }
 
-.container-articles h3{
-}
-
-.container-articles p{
-    text-align: justify;
+.container-articles article h3{
+    margin: 0;
 }
 
 .container-articles a{
@@ -261,7 +260,7 @@ h4{
     justify-content: space-evenly;
     align-items:top;
     margin: auto;
-    padding: 2rem 2rem;
+    padding: 2rem 0;
 }
 
 .container__title{
@@ -276,6 +275,7 @@ h4{
 .container__title span{
     font-style: italic;
     font-size: 1.2rem;
+    margin: 2rem;
 }
 
 .container-items{
@@ -412,7 +412,7 @@ h4{
 
 .footer a{
     text-decoration: none;
-    color: inherit;
+    color: var(--secondary-color-light);
     font-size: 1.5rem;
 }
 
