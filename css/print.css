@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Viaoda+Libre&display=swap');
+
+*{
+    /* background: transparent; */
+    filter: none;
+    -ms-filter: none;
+}
+
+html, body{
+    background-color: #e8d9ba !important; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+}
+
+h1{
+    display: block;
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+}
+    
+h2, h3{
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    color: var(--primary-color) !important;
+    margin-bottom: 0.2rem;
+}
+    
+    h4{
+        font-size: 2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    header{
+        display: none !important;
+    }
+
+    nav{
+        display: none !important;
+    }
+
+    section{
+        page-break-before: always;
+    }
+    
+    
+    article{
+        page-break-inside: avoid !important;
+    }
+        
+    .topo{
+        page-break-inside: avoid !important;
+    }
+
+    .product-container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .samePage{
+        page-break-after: avoid !important;
+    }
+
+    .footer{
+        page-break-inside: avoid !important;
+    }
+    
+    @page{
+        size: a4 portrait;
+        border: var(--primary-color) solid 20px;
+        margin: 0;
+        padding: 2rem;
+    }
